@@ -51,7 +51,7 @@ function Fake2() {
 
   return (
     <div>
-      <h1>Kariya Saman Events</h1>
+      <h1>Marketing Events</h1>
       <div>
         <label>Location: </label>
         <select value={searchLocation} onChange={handleLocationChange}>
