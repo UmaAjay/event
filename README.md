@@ -3,7 +3,8 @@ Welcome to the Event Management System! This is a web application that allows us
 
 Technologies Used
 This project was built using the MERN stack:
-
+Client :https://umaajayclient.onrender.com/
+Server:https://umaajay.onrender.com/event
 MongoDB: A document-based NoSQL database used to store event data
 Express.js: A web application framework used to build the backend server
 React.js: A frontend library used to build the user interface
