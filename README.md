@@ -23,7 +23,7 @@ Open your web browser and navigate to http://localhost:3001
 Features
 This application has the following features:
 
-User authentication using Gmail
+User authentication using JWT using Mongodb
 Event creation with basic details such as event name, start time, end time, location, description, category, and banner image
 Listing page to view all events and filter by date, city, and category
 Filters for cities and categories based on the selected date
