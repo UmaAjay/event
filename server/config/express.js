@@ -4,8 +4,8 @@ const cors = require('cors');
 const secret = 'secret';
 
 module.exports = (app) => {
-    app.use(no-cors({
-        origin: ['http://localhost:3001/','https://umaajayevenets.netlify.app/'],
+    app.use(cors({
+        origin: ['http://localhost:3001/','https://umaajay.onrender.com/'],
         credentials: true
     }));
     app.use(bodyParser.json());
