@@ -5,7 +5,7 @@ const secret = 'secret';
 
 module.exports = (app) => {
     app.use(cors({
-        origin:['http://localhost:3001','https://event2134.netlify.app/'],
+        origin: 'https://umaajayevenets.netlify.app/',
         credentials: true
     }));
     app.use(bodyParser.json());
