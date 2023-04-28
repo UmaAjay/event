@@ -27,6 +27,22 @@ User authentication using JWT using Mongodb
 Event creation with basic details such as event name, start time, end time, location, description, category, and banner image
 Listing page to view all events and filter by date, city, and category
 Filters for cities and categories based on the selected date
+
+
+CORS (Cross-Origin Resource Sharing) is a security mechanism implemented in web browsers that prevents web pages from making requests to a different domain than the one that served the page. This is a security measure that helps protect users from malicious attacks.
+
+When you are building a web application that makes requests to a different domain than the one that served the page, you will need to enable CORS on the server-side to allow those requests to be processed.
+
+In the case of this Event Management System, if you are using a live server to host your application, you will need to enable CORS in order for your application to function correctly. You can use a middleware package like cors to enable CORS on your Node.js server.
+
+Here are the steps to enable CORS in your Node.js server using the cors package:
+
+Install the cors package by running the command npm install cors in your server directory.
+Import the cors package in your server code by adding the following line of code at the top of your server.js file: const cors = require('cors');
+Use the cors middleware in your server code by adding the following line of code before your routes: app.use(cors());
+By enabling CORS in your server code, you are allowing requests from other domains to be processed by your server. This is important if you want your web application to be able to make requests to other domains in order to retrieve data or perform other actions.
+
+
 Contributing
 If you would like to contribute to this project, please create a pull request and describe your changes.
 
