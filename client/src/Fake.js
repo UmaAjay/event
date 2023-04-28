@@ -7,7 +7,7 @@ function Fake() {
 
   useEffect(() => {
     const fetchEvents = async () => {
-      const response = await fetch("http://localhost:4000/event");
+      const response = await fetch("https://umaajay.onrender.com/event");
       const data = await response.json();
       setEvents(data);
     };

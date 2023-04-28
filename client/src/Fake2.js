@@ -9,7 +9,7 @@ function Fake2() {
 
   useEffect(() => {
     const fetchEvents = async () => {
-      const response = await fetch("http://localhost:4000/event");
+      const response = await fetch("https://umaajay.onrender.com/event");
       const data = await response.json();
       setEvents(data);
     };
@@ -35,10 +35,12 @@ function Fake2() {
 
   const filteredEvents = events.filter(
     (event) =>
+      event.location &&
       event.location.toLowerCase().includes(searchLocation.toLowerCase()) &&
+      event.category &&
       event.category.toLowerCase().includes(searchCategory.toLowerCase()) &&
       (startDate === "" || new Date(event.date) >= new Date(startDate)) &&
-      (endDate === "" || new Date(event.date) <= new Date(endDate))
+      (endDate === "" || new Date(event.enddate) <= new Date(endDate))
   );
 
   const locationOptions = Array.from(new Set(events.map(event => event.location)))

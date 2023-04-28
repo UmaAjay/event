@@ -1,12 +1,12 @@
 const userService = {
     get: function(id) {
-        return fetch('http://localhost:4000/user/' + id, {
+        return fetch('https://umaajay.onrender.com/user/' + id, {
            method: 'GET',
            credentials: 'include'
         }).then(res => res.json());
     },
     register: function(data) {
-        return fetch(`http://localhost:4000/user/register`, {
+        return fetch(`https://umaajay.onrender.com/user/register`, {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
@@ -16,7 +16,7 @@ const userService = {
         }).then(res => res.json()).then(user => sessionStorage.setItem('user', JSON.stringify(user)));
     },
     login: function(data) {
-        return fetch(`http://localhost:4000/user/login`, {
+        return fetch(`https://umaajay.onrender.com/user/login`, {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
@@ -28,7 +28,7 @@ const userService = {
         }).then(user => sessionStorage.setItem('user', JSON.stringify(user)));
     },
     logout: function() {
-        return fetch(`http://localhost:4000/user/logout`, {
+        return fetch(`https://umaajay.onrender.com/user/logout`, {
             method: 'POST',
             credentials: 'include'
         }).then(res => res.text()).then(() => sessionStorage.clear());
