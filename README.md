@@ -43,6 +43,12 @@ Import the cors package in your server code by adding the following line of code
 Use the cors middleware in your server code by adding the following line of code before your routes: app.use(cors());
 By enabling CORS in your server code, you are allowing requests from other domains to be processed by your server. This is important if you want your web application to be able to make requests to other domains in order to retrieve data or perform other actions.
 
+About
+client and server
+server:  https://umaajay.onrender.com/event
+
+client :   https://umaajayclient.onrender.com
+
 
 Contributing
 If you would like to contribute to this project, please create a pull request and describe your changes.
